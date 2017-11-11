@@ -25,7 +25,7 @@ git push origin master
 git pull origin master (fetch+merge)
 ```
 
-## gh-pages 分支来发布我们的静态页
+##gh-pages 分支来发布我们的静态页
 - 在项目中创建一个gh-pages的分支
 - 将分支提到线上仓库
 -找到提供给你的网址 settings github-pages
@@ -37,11 +37,10 @@ git pull origin master (fetch+merge)
         git push origin gh-pages
 
 ```
-
-##issue 问题
+## issue 问题
 - 可以提交项目,自己的信息
 
-##更改别人代码
+## 更改别人代码
 - fork是在当前项目下克隆了一份,如果代码更新,你的不会随之更新
 - 拉取到本地
 ```
@@ -51,7 +50,7 @@ git clone 项目地址 项目别名
 >默认就是git仓库而且有origin 地址,可以将代码提交到自己的仓库上
 >只有fork的关系才能发送 pull request请求
 
-##collaborators
+## collaborators
 - 添加贡献者 ,被添加的人拥有最大的权限
 
 ##GUI界面
