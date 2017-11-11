@@ -20,12 +20,12 @@ git remote rm 名字
 ```
 git push origin master
 ```
-##拉去最新的代码
+## 拉去最新的代码
 ```
 git pull origin master (fetch+merge)
 ```
 
-##gh-pages 分支来发布我们的静态页
+## gh-pages 分支来发布我们的静态页
 - 在项目中创建一个gh-pages的分支
 - 将分支提到线上仓库
 -找到提供给你的网址 settings github-pages
@@ -53,6 +53,6 @@ git clone 项目地址 项目别名
 ## collaborators
 - 添加贡献者 ,被添加的人拥有最大的权限
 
-##GUI界面
+## GUI界面
 - 1.add commit
 
