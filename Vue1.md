@@ -1,5 +1,5 @@
-#Vue
-###常用的数组变异
+# Vue
+### 常用的数组变异
 #### 操作数组的方法(括号中能改变数组的)
 (pop push unshift shift  splice reverse sort) indexOf lastIndexof concat slice
 - forEach filter(过滤) map(映射)  some every  reduce  (includes find es6)
@@ -67,28 +67,28 @@ console.log(sum);
 ```
 
 
-###vue基础解释
+### vue基础解释
 vue数据驱动(主要操作数据)
-###框架和库
+### 框架和库
 - 框架 vue 拥有完整的解决方案 我们写好人家调用我
 - 库 jquery underscore zepto animate.css
 我们调用他
 
-###渐进式 （渐进增强）
+### 渐进式 （渐进增强）
 - vue全家桶 vuejs + vue-router + vuex + axios
 - 通过组合 完成一个完整的框架
 
-###MVC（backbone） 单向
+### MVC（backbone） 单向
 - model数据
 - view 视图
 - controller 控制器
 
-###MVVM(angular,vue) 双向的
+### MVVM(angular,vue) 双向的
 - model数据
 - view 视图
 - viewModel 视图模型
 
-###Object.defineProperty(es5)的没有替代方案
+### Object.defineProperty(es5)的没有替代方案
 - 不支持ie8<=
 ```
 Object.defineProperty(obj,"name",{
@@ -118,12 +118,12 @@ Object.defineProperty(obj,"name",{
     })
 ```
 
-###vm
+### vm
 - vm => viewModel 数据最终都会被vm所代理。
 - {{a}} 取值表达式，通过{{}}来进行取值,默认可以不写this，表达式 赋值运算 计算 三元表达式
 尽量少写逻辑（computed）
 
-###vue的指令(direvtive)
+### vue的指令(direvtive)
 vue的"指令"directive 只是dom上的行间属性,vue给这类属性赋予一定的意义来实现特殊的功能,所有指令都以v-开头,value属性默认情况下会被vue忽略掉 selected checked都没有意义;
 
 1. `v-model` (表单元素) 忽略掉value,checked,selected,将数据绑定的视图上，视图修改后会影响数据的变化;
@@ -139,7 +139,7 @@ v-model(如果checkbox,select多选是数组，提供一个value属性)(radio ch
    <div v-for="value in/of 数组"></div>
    <div v-for="(value,index) in/of 数组"></div>
   ```
-####v-for
+#### v-for
 以前 :拼接字符串innerHTML
    `vue提供了一个指令 v-for 解决循环问题  更高效 会复用原有的解构`
   - 要循环谁就在谁身上加v-for属性
@@ -152,11 +152,11 @@ v-model(如果checkbox,select多选是数组，提供一个value属性)(radio ch
    </ul>
   ```
 
-####v-show
+#### v-show
 根据值ture/false来控制元素的display属性;
 操作的是样式
 
-####v-if
+#### v-if
 操作的是dom
 `v-if`和`v-else-if`链式调用
 根据值的true/false,在切换时元素及它的数据绑定 / 组件被销毁并重建
@@ -168,10 +168,10 @@ template标签 是vue提供给我们的没有任何的实际意义，用来包�
         <div>123</div>
 </template>
 ```
-####v-else
+#### v-else
 前一兄弟元素必须有 v-if 或 v-else-if。
 
-####v-bind
+#### v-bind
 动态地绑定一个或多个特性
 `<img :src="src" :width="w"/>`
 在绑定class和style时候
@@ -183,7 +183,7 @@ template标签 是vue提供给我们的没有任何的实际意义，用来包�
   <div :class="{true:'x',false:'y'}[true]">你不会用吧？</div>
   <div v-for="(a,index) in 10" :class="{x:index%2}">{{a}}</div>
 ```
-###事件v-on(@)
+### 事件v-on(@)
   绑定给dom元素，函数需要定义在methods中，不能和data里的内容重名，this指向的是实例，不能使用箭头函数，事件源对象如果不写括号，可以自动传入，否则只能手动传入$event
 ```
 <div @事件名="fn"></div>
@@ -206,7 +206,7 @@ let vm = new Vue({//根实例
     })
 ```
 
-###修饰符
+### 修饰符
 修饰符 .number.lazy
 - 按键修饰符 .enter.ctrl.keyCode
 - 事件
@@ -265,7 +265,7 @@ let vm = new Vue({
     })
 ```
 
-###watch
+### watch
 只有值变化的时候才会触发 支持异步了,其他情况我们更善于使用computed;
 watch的属性名字要和观察的人的名字一致
 ```
@@ -288,7 +288,7 @@ watch的属性名字要和观察的人的名字一致
         }*/
     });
 ```
-###directive
+### directive
 自定义指令放在这个属性中
 ```
  let vm = new Vue({
@@ -318,7 +318,7 @@ watch的属性名字要和观察的人的名字一致
     })
 ```
 
-###promise
+### promise
 表示请求数据成功后.用promise干点什么事
 -  resolve代表的是转向成功态
 - reject代表的是转向失败态   resolve和reject均是函数
@@ -336,7 +336,7 @@ p.then((data)=>{console.log(data)},(err)=>{console.log('err')});
 - 成功态 失败态 等待(pending)
 
 
-###vue的基本结构
+### vue的基本结构
 ```
   <div id="app">
 
